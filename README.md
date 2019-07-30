@@ -1,5 +1,4 @@
 # The entypreter rootkit
-
  
                       /oosso:/sys:/yy/:o`              
                 +s/o:osohodso/:ysys//////++:`         
