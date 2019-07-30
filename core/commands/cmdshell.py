@@ -1,4 +1,4 @@
-DESCRIPTION = "command shell to interact with a session"
+DESCRIPTION = "Command shell to interact with a session."
 
 def autocomplete(shell, line, text, state):
     if len(line.split()) > 1:
