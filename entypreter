@@ -22,7 +22,7 @@
 # responsible for any misuse or damage caused by this program.
 
 __version_info__ = "v5.0.0" # Permanent Alpha
-__version__ = "v5.0.0"
+__version__ = "5.0"
 __license__ = "Apache 2.0"
 __credits__ = ["entynetproject", "jmage", "TheNaterz", "aleph-naught-"]
 
