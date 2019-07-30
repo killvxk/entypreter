@@ -1,4 +1,4 @@
-DESCRIPTION = "Exit from the entypreter."
+DESCRIPTION = "Exit from the Entypreter."
 
 def autocomplete(shell, line, text, state):
     return None
