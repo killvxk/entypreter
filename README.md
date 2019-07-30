@@ -1,4 +1,4 @@
-# The entypreter rootkit
+# The Entypreter Rootkit 
 
                          ______
                       .-"      "-.
@@ -16,7 +16,7 @@
 
 # About entypreter rootkit
 
-    INFO: Entypreter is a Windows post-exploitation rootkit similar to other penetration 
+    INFO: Entypreter Rootkit is a Windows post-exploitation rootkit similar to other penetration 
     testing tools such as Meterpreter and Powershell Invader Framework. The major difference is 
     that entypreter does most of its operations using Windows Script Host (a.k.a. JScript/VBScript), 
     with compatibility in the core to support a default installation of Windows 2000 with no service 
@@ -36,8 +36,8 @@
 
 # The entypreter examples
 
-    INFO: There are some entypreter examples - 
-    how to start entypreter stager or implant.
+    INFO: There are some Entypreter examples - 
+    how to start Entypreter stager or implant.
 
 ## Starting entypreter stager
 
@@ -62,14 +62,15 @@
 
 # Stagers and implants
 
-    INFO: Stagers hook target session and 
-    allow you to use implants. Implants 
+    INFO: Entypreter stagers hook 
+    target session and allow you to 
+    use implants. Entypreter implants 
     starts jobs on remote session.
     
 ## The entypreter stagers
 
-    INFO: Stagers hook target session 
-    and allow you to use implants.
+    INFO: Entypreter stagers hook target 
+    session and allow you to use implants.
 
 Module | Codename | Description
 --------|---|------------
@@ -81,7 +82,7 @@ stager/js/disk | windows/entypreter/disk_rootkit |serves payloads using files on
 
 ## The entypreter implants
 
-    INFO: Implants starts 
+    INFO: Entypreter implants starts 
     jobs on remote session.
 
 Module | Description
@@ -102,8 +103,8 @@ implant/inject/shellcode_excel | Runs arbitrary shellcode payload (if Excel is i
 implant/manage/enable_rdesktop | Enables remote desktop on the target.
 implant/manage/exec_cmd | Run an arbitrary command on the target, and optionally receive the output.
 implant/persist/add_user | Create a local/domain user.
-implant/persist/registry | Add an entypreter payload to the registry.
-implant/persist/schtasks | Add an entypreter payload as a Scheduled Task.
+implant/persist/registry | Add an Entypreter payload to the registry.
+implant/persist/schtasks | Add an Entypreter payload as a Scheduled Task.
 implant/persist/wmi | Add an entypreter payload as a WMI subscription.
 implant/phishing/password_box | Prompt a user to enter their password.
 implant/pivot/stage_wmi | Hook a session on another machine using WMI.
@@ -118,7 +119,7 @@ implant/utils/upload_file | Uploads a file from the listening server to the targ
 # TLS Communications
 
     INFO: To enable TLS communications, you will need 
-    to host your entypreter stager on a valid domain 
+    to host your Entypreter stager on a valid domain 
     (i.e. malicious.com) with a known Root CA signed 
     certificate. Windows will check its certificate 
     store and will NOT allow a self-signed certificate.
