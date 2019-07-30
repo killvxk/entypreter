@@ -1,4 +1,4 @@
-DESCRIPTION = "turn verbosity off/on: verbose (0|1)"
+DESCRIPTION = "Turn verbosity off/on: verbose (0|1)."
 
 def autocomplete(shell, line, text, state):
     return None
