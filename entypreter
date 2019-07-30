@@ -21,8 +21,8 @@
 # federal, and international laws. Developers assume no liability and are not
 # responsible for any misuse or damage caused by this program.
 
-__version_info__ = (0, "A") # Permanent Alpha
-__version__ = "x".join(map(str, __version_info__))
+__version_info__ = "v5.0.0" # Permanent Alpha
+__version__ = "entypreter-v5.0.0-dev"
 __license__ = "Apache 2.0"
 __credits__ = ["entynetproject", "jmage", "TheNaterz", "aleph-naught-"]
 
