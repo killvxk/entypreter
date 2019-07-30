@@ -1,4 +1,4 @@
-DESCRIPTION = "shows collected credentials"
+DESCRIPTION = "Display all collected credentials."
 
 def autocomplete(shell, line, text, state):
     if "-d" in line.split():
