@@ -141,9 +141,9 @@ if __name__ == "__main__":
     import datetime
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--autorun", help="a file containing commands to autorun at startup")
-    parser.add_argument("-o", action="store_true", help="it is tuesday my dudes")
-    parser.add_argument("--restore", help="a entypreter restore json file")
+    parser.add_argument("--autorun", help="A file containing commands to autorun at startup.")
+    parser.add_argument("-o", action="store_true", help="Launch Entypreter Rootkit")
+    parser.add_argument("--restore", help="An Entypreter restore json file")
     args = parser.parse_args()
     autorun = open(args.autorun).read().split("\n") if args.autorun else []
     if args.restore:
