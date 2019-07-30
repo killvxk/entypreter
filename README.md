@@ -1,4 +1,4 @@
-# Entynet Remete Administration Tool (entypreter)
+# Entynet Remote Administration Tool (entypreter)
 
     INFO: The Entynet Remote Administration Tool (entypreter) 
     is a Windows post-exploitation rootkit similar to other penetration 
