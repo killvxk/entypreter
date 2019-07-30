@@ -1,4 +1,4 @@
-DESCRIPTION = "go back to the last used module"
+DESCRIPTION = "Go back to the last used module."
 
 def autocomplete(shell, line, text, state):
     pass
