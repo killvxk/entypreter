@@ -10,13 +10,13 @@
    
 ***
 
-# Stagers and Implants
+# Stagers and implants
 
     INFO: Stagers hook target session and 
     allow you to use implants. Implants 
     starts jobs on remote session.
     
-## Stagers
+## Entypreter stagers
 
     INFO: Stagers hook target session 
     and allow you to use implants.
@@ -29,7 +29,7 @@ stager/js/wmic | serves payloads using WMIC XSL.
 stager/js/rundll32_js | serves payloads using rundll32.exe.
 stager/js/disk | serves payloads using files on disk.
 
-## Implants
+## Entypreter implants
 
     INFO: Implants starts 
     jobs on remote session.
