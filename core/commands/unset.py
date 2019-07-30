@@ -1,4 +1,4 @@
-DESCRIPTION = "unsets a variable for the current module"
+DESCRIPTION = "Unset a variable for the current module."
 
 def autocomplete(shell, line, text, state):
 
