@@ -1,4 +1,4 @@
-DESCRIPTION = "stub command for help text"
+DESCRIPTION = "Stub command for help text."
 hidden_command = True
 
 def autocomplete(shell, line, text, state):
