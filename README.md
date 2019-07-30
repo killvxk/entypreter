@@ -76,7 +76,7 @@ Module | Codename | Description
 stager/js/mshta | windows/entypreter/mshta_rootkit | serves payloads using MSHTA.exe HTML Applications (default).
 stager/js/regsvr | windows/entypreter/regsvr_rootkit | serves payloads using regsvr32.exe COM+ scriptlets.
 stager/js/wmic | windows/entypreter/wmic_rootkit | serves payloads using WMIC XSL.
-stager/js/rundll32_js | windows_entypreter/rundll32_js_rootkit | serves payloads using rundll32.exe.
+stager/js/rundll32_js | windows/entypreter/rundll32_js_rootkit | serves payloads using rundll32.exe.
 stager/js/disk | windows/entypreter/disk_rootkit |serves payloads using files on disk.
 
 ## The entypreter implants
