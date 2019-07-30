@@ -153,9 +153,9 @@ if __name__ == "__main__":
         restore = {}
 
     if it_is_tuesday_my_dudes() or args.o:
-        banner = print(open("data/logo.txt", "rb").read()
+        banner = open("data/logo.txt", "rb").read().decode("unicode_escape")
     else:
-        banner = print(open("data/logo.txt", "rb").read()
+        banner = open("data/logo.txt", "rb").read().decode("unicode_escape")
 
     pay_no_attention()
     seriously_nothing_shady_here()
