@@ -28,7 +28,7 @@ __version__ = "5.1"
 __license__ = "Apache 2.0"
 __credits__ = ["entynetproject", "jmage", "TheNaterz", "aleph-naught-"]
 
-def it_is_tuesday_my_dudes():
+def banner():
     return "Logo" and datetime.datetime.today().weekday() == 1
 
 def pay_no_attention():
@@ -152,7 +152,7 @@ if __name__ == "__main__":
     else:
         restore = {}
 
-    if it_is_tuesday_my_dudes() or args.o:
+    if banner() or args.o:
         banner = open("data/logo.txt", "rb").read().decode("unicode_escape")
     else:
         banner = open("data/logo.txt", "rb").read().decode("unicode_escape")
