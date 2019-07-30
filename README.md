@@ -8,7 +8,7 @@
    
 ***
 
-# Getting started
+# The entypreter installation
 
 > cd entypreter
 
