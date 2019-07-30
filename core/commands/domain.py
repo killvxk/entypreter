@@ -1,4 +1,4 @@
-DESCRIPTION = "shows collected domain information"
+DESCRIPTION = "Shows collected domain information."
 
 def autocomplete(shell, line, text, state):
     options = [x + " " for y in shell.domain_info for x in y if x.upper().startswith(text.upper())]
