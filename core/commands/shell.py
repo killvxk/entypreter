@@ -1,4 +1,4 @@
-DESCRIPTION = "Interact with an active session."
+DESCRIPTION = "Open target's CMD shell."
 
 def autocomplete(shell, line, text, state):
     if len(line.split()) > 1:
