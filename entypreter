@@ -21,8 +21,8 @@
 # federal, and international laws. Developers assume no liability and are not
 # responsible for any misuse or damage caused by this program.
 
-__version_info__ = "v5.0.0" # Permanent Alpha
-__version__ = "5.0"
+__version_info__ = "v5.1" # Permanent Alpha
+__version__ = "5.1"
 __license__ = "Apache 2.0"
 __credits__ = ["entynetproject", "jmage", "TheNaterz", "aleph-naught-"]
 
