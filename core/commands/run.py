@@ -1,4 +1,4 @@
-DESCRIPTION = "runs the current module"
+DESCRIPTION = "Run the current module."
 
 def autocomplete(shell, line, text, state):
     return None
