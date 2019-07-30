@@ -3,3 +3,4 @@ pycrypto
 pyasn1
 tabulate
 rjsmin
+playsound
