@@ -3,7 +3,7 @@ import time
 import sys
 import os
 
-DESCRIPTION = "turn off/on the rest api"
+DESCRIPTION = "Turn off/on the rest api."
 
 def autocomplete(shell, line, text, state):
     return None
