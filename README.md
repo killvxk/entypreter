@@ -1,4 +1,4 @@
-# The Entypreter Rootkit 
+# The Entypreter Rootkit (TER)
 
                          ______
                       .-"      "-.
