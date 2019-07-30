@@ -30,4 +30,5 @@ cp bin/entypreter /usr/local/bin
 chmod +x /usr/local/bin/entypreter
 cp bin/entypreter /bin
 chmod +x /bin/entypreter
+pip3 install -r requirements.txt
 } &> /dev/null
