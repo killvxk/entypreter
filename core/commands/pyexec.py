@@ -1,4 +1,4 @@
-DESCRIPTION = "evals some python"
+DESCRIPTION = "Evals some python."
 
 def autocomplete(shell, line, text, state):
     return None
