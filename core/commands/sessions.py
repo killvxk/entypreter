@@ -1,7 +1,7 @@
 import datetime
 import core.session
 
-DESCRIPTION = "lists hooked targets"
+DESCRIPTION = "Lists hooked targets."
 
 def autocomplete(shell, line, text, state):
     return None
