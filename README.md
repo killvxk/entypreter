@@ -20,7 +20,10 @@
 
 # The entypreter examples
 
-## Starting stager
+    INFO: There are some entypreter examples - 
+    how to start entypreter stager or implant.
+
+## Starting entypreter stager
 
 > entypreter
 
@@ -29,7 +32,7 @@
     (entypreter: sta/js/mshta)# set SRVPORT [LPORT]
     (entypreter: sta/js/mshta)# run
     
-## Starting implant
+## Starting entypreter implant
 
 > entypreter
 
