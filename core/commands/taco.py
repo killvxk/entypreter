@@ -1,4 +1,4 @@
-DESCRIPTION = "taco time"
+DESCRIPTION = "Taco time entypreter logo."
 
 def autocomplete(shell, line, text, state):
     return None
