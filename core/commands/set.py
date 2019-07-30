@@ -1,6 +1,6 @@
 import os
 
-DESCRIPTION = "sets a variable for the current module"
+DESCRIPTION = "Set a variable for the current module."
 
 def autocomplete(shell, line, text, state):
 
