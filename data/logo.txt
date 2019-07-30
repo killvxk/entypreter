@@ -13,7 +13,7 @@
 
          -{ \033[34;1mThe Entypreter Rootkit\033[0m }-
         \033[32;1mWindows Post-Exploitation Tool\033[0m
-         \033[3mwindows/entypreter/mshta_js\033[0m
+        \033[3mwindows/entypreter/mshta_rootkit\033[0m
  
             +=[ \033[1mVersion:\033[0m  %s ]=+
             +=[ \033[1mStagers:\033[0m    %d ]=+
