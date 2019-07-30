@@ -18,8 +18,8 @@
  \033[33;1m.+ooo/:::/://///:.`\033[0m                              
 
 
-         -{ \033[34;1mRemote Command & Control\033[0m }-
-      \033[32;1mWindows Post-Exploitation Tools\033[0m
+         -{ \033[34;1mThe Entypreter Rootkit\033[0m }-
+         \033[32;1mWindows Post-Exploitation Tools\033[0m
              \033[3mEndless Intellect\033[0m
  
              +=[ \033[1mVersion:\033[0m  %s ]=+
