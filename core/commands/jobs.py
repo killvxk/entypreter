@@ -1,4 +1,4 @@
-DESCRIPTION = "Display info about jobs."
+DESCRIPTION = "Display info about a job."
 
 def autocomplete(shell, line, text, state):
     pass
