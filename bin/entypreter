@@ -36,6 +36,8 @@ then
 {
 cd ~/entypreter
 } &> /dev/null
+cd
+cd entypreter
 chmod +x entypreter
 ./entypreter
 else
@@ -49,6 +51,8 @@ cd ~
 git clone https://github.com/entynetproject/entypreter.git
 cd ~/entypreter
 } &> /dev/null
+cd
+cd entypreter
 chmod +x entypreter
 ./entypreter
 else
