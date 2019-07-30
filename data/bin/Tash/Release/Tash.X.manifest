@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" 
+  manifestVersion="1.0">
+
+<assemblyIdentity
+   type="win32"
+   name="Tash.X"
+   version="1.0.0.0" />
+
+<file name = "Tash.dll">
+
+<comClass
+    clsid="{6AA5DEAB-5B77-4D09-BD8D-8EE26F2964AA}"
+    threadingModel = "Both" />
+
+<typelib tlbid="{830CFF36-9188-45DF-9EF3-D14C1D12A3A4}"
+       version="1.0" helpdir=""/>
+
+</file>
+
+<comInterfaceExternalProxyStub 
+    name="ITashLoader" 
+    iid="{5FF70415-14AE-403D-AADD-A797348C8967}"
+    proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"
+    baseInterface="{00000000-0000-0000-C000-000000000046}"
+    tlbid = "{830CFF36-9188-45DF-9EF3-D14C1D12A3A4}" />
+
+</assembly>
+

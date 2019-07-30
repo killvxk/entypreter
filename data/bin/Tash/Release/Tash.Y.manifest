@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+	<assemblyIdentity type="win32" name="Tash" version="1.0.0.0"/>
+	<file name="Tash.dll">
+    	<comClass
+        	description="Tash"
+        	clsid="{6AA5DEAB-5B77-4D09-BD8D-8EE26F2964AA}"
+        	threadingModel="Both"
+        	progid="Tash.TashLoader"/>
+	</file>
+</assembly>
+
