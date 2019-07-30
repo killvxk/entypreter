@@ -70,11 +70,6 @@ implant/utils/upload_file | Uploads a file from the listening server to the targ
     (i.e. malicious.com) with a known Root CA signed 
     certificate. Windows will check its certificate 
     store and will NOT allow a self-signed certificate.
-
-> Free certificates are available at: https://letsencrypt.org/getting-started/
-
-    (entypreter: sta/js/mshta)$ set CERTPATH /path/to/fullchain.pem
-    (entypreter: sta/js/mshta)$ set KEYPATH  /path/to/privkey.pem
     
 ***
     
