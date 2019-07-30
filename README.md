@@ -1,4 +1,4 @@
-# The entypreter
+# The entypreter rootkit
 
     INFO: The entypreter is a Windows post-exploitation rootkit similar to other penetration 
     testing tools such as Meterpreter and Powershell Invader Framework. The major difference is 
@@ -14,7 +14,7 @@
     allow you to use implants. Implants 
     starts jobs on remote session.
     
-## Entypreter stagers
+## The entypreter stagers
 
     INFO: Stagers hook target session 
     and allow you to use implants.
@@ -27,7 +27,7 @@ stager/js/wmic | serves payloads using WMIC XSL.
 stager/js/rundll32_js | serves payloads using rundll32.exe.
 stager/js/disk | serves payloads using files on disk.
 
-## Entypreter implants
+## The entypreter implants
 
     INFO: Implants starts 
     jobs on remote session.
