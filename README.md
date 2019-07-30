@@ -71,7 +71,7 @@
     INFO: Stagers hook target session 
     and allow you to use implants.
 
-Module | Rootkit Codename |Description
+Module | Codename | Description
 --------|---|------------
 stager/js/mshta | windows/entypreter/mshta_rootkit | serves payloads using MSHTA.exe HTML Applications (default).
 stager/js/regsvr | windows/entypreter/regsvr_rootkit | serves payloads using regsvr32.exe COM+ scriptlets.
