@@ -1,22 +1,17 @@
 # The entypreter rootkit
 
-                      /oosso:/sys:/yy/:o`              
-                +s/o:osohodso/:ysys//////++:`         
-               hs+-/sss/yoo+sys:.          ./+/`      
-           :dyhyshhossooosss:                 .++`    
-        oyddhsysyhyysyssyo.                     .o:   
-       .osdshmhhyyso++y+`                         o/  
-     :y///ooyyysoys/:o.                            ++ 
-     s++s+-.+:/o+-+y/      The Entypreter           s-
-    .y+-+`++-o+:/:s-               Taco Time        .h
-    y--/:-.++-++:y`                                  d
-    d.o:/-`//-:oo`                                 `h
-    h.o.+++`++/o                                  .:+.
-    ho:++++.+:o                              .-:/+:.  
-    hy`++:+-+s                       `.://///:.``     
-    +h+++:+-y`               .-://///:-.``            
-    `hy/--/s`        `-//////:.``                     
-     .+ooo/:::/://///:.`                              
+                         ______
+                      .-"      "-.
+                     /            \
+                    |              |
+                    |,  .-.  .-.  ,|
+                    | )(__/  \__)( |
+                    |/     /\     \|
+          (@_       (_     ^^     _)
+     _     ) \_______\__|IIIIII|__/__________________________
+    (_)@8@8{}<________|-\IIIIII/-|___________________________>
+           )_/        \          /
+          (@           `--------` 
 
 ***
 
