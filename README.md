@@ -16,7 +16,7 @@
 
 # About entypreter rootkit
 
-    INFO: The entypreter is a Windows post-exploitation rootkit similar to other penetration 
+    INFO: Entypreter is a Windows post-exploitation rootkit similar to other penetration 
     testing tools such as Meterpreter and Powershell Invader Framework. The major difference is 
     that entypreter does most of its operations using Windows Script Host (a.k.a. JScript/VBScript), 
     with compatibility in the core to support a default installation of Windows 2000 with no service 
