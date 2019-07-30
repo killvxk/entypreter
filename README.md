@@ -1,5 +1,28 @@
 # The entypreter rootkit
 
+ 
+                      /oosso:/sys:/yy/:o`              
+                +s/o:osohodso/:ysys//////++:`         
+               hs+-/sss/yoo+sys:.          ./+/`      
+           :dyhyshhossooosss:                 .++`    
+        oyddhsysyhyysyssyo.                     .o:   
+       .osdshmhhyyso++y+`                         o/  
+     :y///ooyyysoys/:o.                            ++ 
+     s++s+-.+:/o+-+y/                               s-
+    .y+-+`++-o+:/:s-                                .h
+    y--/:-.++-++:y`                                  d
+    d.o:/-`//-:oo`                                  `h
+    h.o.+++`++/o                                  .:+.
+    ho:++++.+:o                              .-:/+:.  
+    hy`++:+-+s                       `.://///:.``     
+    +h+++:+-y`               .-://///:-.``            
+    `hy/--/s`        `-//////:.``                     
+     .+ooo/:::/://///:.`                              
+
+***
+
+# About entypreter rootkit
+
     INFO: The entypreter is a Windows post-exploitation rootkit similar to other penetration 
     testing tools such as Meterpreter and Powershell Invader Framework. The major difference is 
     that entypreter does most of its operations using Windows Script Host (a.k.a. JScript/VBScript), 
