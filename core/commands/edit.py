@@ -1,4 +1,4 @@
-DESCRIPTION = "shell out to an editor for the current module"
+DESCRIPTION = "Shell out to an editor for the current module."
 
 def autocomplete(shell, line, text, state):
     return None
