@@ -151,7 +151,7 @@ if __name__ == "__main__":
         restore = {}
 
     if it_is_tuesday_my_dudes() or args.o:
-        os.system("cd data && chmod +x taco.txt && ./taco.txt")
+        banner = os.system("cd data && chmod +x taco.txt && ./taco.txt")
     else:
         banner = open("data/banner.txt", "rb").read().decode("unicode_escape")
 
