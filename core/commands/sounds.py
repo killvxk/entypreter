@@ -1,4 +1,4 @@
-DESCRIPTION = "turn sounds off/on: sound(0|1)"
+DESCRIPTION = "Turn sounds off/on: sound(0|1)."
 
 def autocomplete(shell, line, text, state):
     return None
