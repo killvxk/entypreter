@@ -1,5 +1,5 @@
 # The entypreter rootkit
- 
+
                       /oosso:/sys:/yy/:o`              
                 +s/o:osohodso/:ysys//////++:`         
                hs+-/sss/yoo+sys:.          ./+/`      
@@ -7,10 +7,10 @@
         oyddhsysyhyysyssyo.                     .o:   
        .osdshmhhyyso++y+`                         o/  
      :y///ooyyysoys/:o.                            ++ 
-     s++s+-.+:/o+-+y/                               s-
-    .y+-+`++-o+:/:s-                                .h
+     s++s+-.+:/o+-+y/      The Entypreter           s-
+    .y+-+`++-o+:/:s-               Taco Time        .h
     y--/:-.++-++:y`                                  d
-    d.o:/-`//-:oo`                                  `h
+    d.o:/-`//-:oo`                                 `h
     h.o.+++`++/o                                  .:+.
     ho:++++.+:o                              .-:/+:.  
     hy`++:+-+s                       `.://///:.``     
