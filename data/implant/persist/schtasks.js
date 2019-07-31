@@ -1,7 +1,7 @@
 try
 {
     var headers = {};
-    var taskname = "K0adic";
+    var taskname = "Entypreter";
     var droppath = entypreter.file.getPath("~FDROPDIR~\\~FDROPFILE~");
     if (~CLEANUP~)
     {
