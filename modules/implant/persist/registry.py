@@ -28,7 +28,7 @@ class RegistryJob(core.job.Job):
         if task == "AddKey":
             handler.reply(200)
             if data:
-                self.shell.print_good("K0adic key added to registry.")
+                self.shell.print_good("Entypreter key added to registry.")
                 self.shell.print_command("reg delete "+self.options.get("HKEY")+"\\Software\\Microsoft\\Windows\\CurrentVersion\\Run /v K0adic /f")
             else:
                 self.shell.print_error("Could not add key to registry.")
