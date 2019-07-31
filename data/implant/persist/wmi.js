@@ -2,7 +2,7 @@ try
 {
 
     var headers = {};
-    var subname = "K0adic";
+    var subname = "Entypreter";
     var droppath = entypreter.file.getPath("~FDROPDIR~\\~FDROPFILE~");
 
     if (~CLEANUP~)
