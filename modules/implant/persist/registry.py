@@ -29,7 +29,7 @@ class RegistryJob(core.job.Job):
             handler.reply(200)
             if data:
                 self.shell.print_good("Entypreter key added to registry.")
-                self.shell.print_command("reg delete "+self.options.get("HKEY")+"\\Software\\Microsoft\\Windows\\CurrentVersion\\Run /v K0adic /f")
+                self.shell.print_command("reg delete "+self.options.get("HKEY")+"\\Software\\Microsoft\\Windows\\CurrentVersion\\Run /v Entypreter /f")
             else:
                 self.shell.print_error("Could not add key to registry.")
             return
@@ -40,7 +40,7 @@ class RegistryJob(core.job.Job):
                 self.shell.print_good("Key was removed.")
             else:
                 self.shell.print_error("Key could not be removed.")
-                self.shell.print_command("reg delete "+self.options.get("HKEY")+"\\Software\\Microsoft\\Windows\\CurrentVersion\\Run /v K0adic /f")
+                self.shell.print_command("reg delete "+self.options.get("HKEY")+"\\Software\\Microsoft\\Windows\\CurrentVersion\\Run /v Entypreter /f")
             return
 
         if task == "AddDropper":
@@ -78,7 +78,7 @@ class RegistryJob(core.job.Job):
 class RegistryImplant(core.implant.Implant):
 
     NAME = "Add Registry Payload"
-    DESCRIPTION = "Adds a entypreter stager payload in the registry."
+    DESCRIPTION = "Adds an entypreter stager payload in the registry."
     AUTHORS = ["TheNaterz"]
     STATE = "implant/persist/registry"
 
