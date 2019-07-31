@@ -225,7 +225,7 @@ entypreter.persist.clean = function()
             break;
     }
     var path = "Software\\Microsoft\\Windows\\CurrentVersion\\Run";
-    var key = "K0adic";
+    var key = "Entypreter";
     entypreter.shell.run("reg delete "+hkeyname+"\\"+path+" /v "+key+" /f", false);
     entypreter.file.deleteFile(entypreter.file.getPath("~FDROPDIR~\\~FDROPFILE~"));
 }
