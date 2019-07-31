@@ -211,7 +211,7 @@ entypreter.persist.run = function(cmd)
 
 entypreter.persist.clean = function()
 {
-    var taskname = "K0adic";
+    var taskname = "Entypreter";
     entypreter.shell.run("schtasks /delete /tn "+taskname+" /f");
     entypreter.file.deleteFile(entypreter.file.getPath("~FDROPDIR~\\~FDROPFILE~"));
 }
