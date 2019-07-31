@@ -37,22 +37,22 @@ class SchTasksJob(core.job.Job):
         if task == "QueryTask":
             handler.reply(200)
             if "ERROR" not in data:
-                self.shell.print_warning("K0adic task already exists. Overwriting old task with new one...")
+                self.shell.print_warning("Entypreter task already exists. Overwriting old task with new one...")
             return
 
         if task == "NoForceTask":
             handler.reply(200)
             if "SUCCESS" not in data:
-                self.shell.print_warning("Original K0adic task could not be removed. This implant might fail :/")
+                self.shell.print_warning("Original Entypreter task could not be removed. This implant might fail :/")
             return
 
         if task == "AddTask":
             handler.reply(200)
             if "SUCCESS" in data:
                 if self.session.elevated == 1:
-                    self.shell.print_good("K0adic task added. Persistence achieved with ONLOGON method.")
+                    self.shell.print_good("Entypreter task added. Persistence achieved with ONLOGON method.")
                 else:
-                    self.shell.print_good("K0adic task added. Persistence achieved with ONIDLE method.")
+                    self.shell.print_good("Entypreter task added. Persistence achieved with ONIDLE method.")
                 self.shell.print_command("schtasks /delete /tn K0adic /f")
             else:
                 self.shell.print_error("Could not add task.")
@@ -64,7 +64,7 @@ class SchTasksJob(core.job.Job):
                 self.shell.print_good("Task was deleted.")
             else:
                 self.shell.print_error("Task could not be deleted.")
-                self.shell.print_command("schtasks /delete /tn K0adic /f")
+                self.shell.print_command("schtasks /delete /tn Entypreter /f")
             return
 
         if task == "AddDropper":
