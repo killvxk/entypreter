@@ -53,7 +53,7 @@ class SchTasksJob(core.job.Job):
                     self.shell.print_good("Entypreter task added. Persistence achieved with ONLOGON method.")
                 else:
                     self.shell.print_good("Entypreter task added. Persistence achieved with ONIDLE method.")
-                self.shell.print_command("schtasks /delete /tn K0adic /f")
+                self.shell.print_command("schtasks /delete /tn Entypreter /f")
             else:
                 self.shell.print_error("Could not add task.")
             return
