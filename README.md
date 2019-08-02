@@ -79,7 +79,7 @@ stager/js/regsvr | windows/entypreter/regsvr_rootkit | Serves payloads using reg
 stager/js/wmic | windows/entypreter/wmic_rootkit | Serves payloads using WMIC XSL.
 stager/js/rundll32_js | windows/entypreter/rundll32_js_rootkit | Serves payloads using rundll32.exe.
 stager/js/disk | windows/entypreter/disk_rootkit | Serves payloads using files on disk.
-stager/js/tcp | osx/entypreter/reverse_tcp | Serves macOS reverse TCP (not available here, available at MPL).
+stager/js/tcp | osx/entypreter/reverse_tcp | Serves macOS reverse TCP (not available here, available at Mouse Payload Loader (MPL) https://github.com/entynetproject/mouse).
 
 ## The entypreter implants
 
