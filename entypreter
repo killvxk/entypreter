@@ -153,9 +153,11 @@ if __name__ == "__main__":
         restore = {}
 
     if banner() or args.o:
-        banner = open("data/logo.txt", "rb").read().decode("unicode_escape")
+        os.system("cd && chmod +x entypreter/data/logo.txt && entypreter/data/logo.txt")
+        banner = open("data/logo2.txt", "rb").read().decode("unicode_escape")
     else:
-        banner = open("data/logo.txt", "rb").read().decode("unicode_escape")
+        os.system("cd && chmod +x entypreter/data/logo.txt && entypreter/data/logo.txt")
+        banner = open("data/logo2.txt", "rb").read().decode("unicode_escape")
 
     pay_no_attention()
     seriously_nothing_shady_here()
